@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{627E852F-4564-4A99-B02F-B15F097BF225}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		RestVsgRPC.md = RestVsgRPC.md
+		Topics.md = Topics.md
+		SearchingForMicroservices.md = SearchingForMicroservices.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{F6A9A0DC-D91F-4465-8D56-415A93D76C95}"
