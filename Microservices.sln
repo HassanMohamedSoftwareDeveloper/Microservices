@@ -9,19 +9,49 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{627E852F-4
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 		RestVsgRPC.md = RestVsgRPC.md
-		Topics.md = Topics.md
 		SearchingForMicroservices.md = SearchingForMicroservices.md
+		Topics.md = Topics.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{F6A9A0DC-D91F-4465-8D56-415A93D76C95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "microservice-map-info", "microservice-map-info\microservice-map-info.csproj", "{976850BD-A066-44E9-8118-556B2E663416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapInfo", "GoogleMapInfo\GoogleMapInfo.csproj", "{39FC2390-B995-400D-84A1-073D2FD3DF20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requests", "Requests", "{1A254D05-C830-4C4C-A937-62447DCCA2CC}"
+	ProjectSection(SolutionItems) = preProject
+		microservice-map-info-requests.http = microservice-map-info-requests.http
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice_gRPC_Tester", "Microservice_gRPC_Tester\Microservice_gRPC_Tester.csproj", "{98DC6980-C360-4667-B976-0096B474643A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{976850BD-A066-44E9-8118-556B2E663416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976850BD-A066-44E9-8118-556B2E663416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976850BD-A066-44E9-8118-556B2E663416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976850BD-A066-44E9-8118-556B2E663416}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39FC2390-B995-400D-84A1-073D2FD3DF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39FC2390-B995-400D-84A1-073D2FD3DF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39FC2390-B995-400D-84A1-073D2FD3DF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39FC2390-B995-400D-84A1-073D2FD3DF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98DC6980-C360-4667-B976-0096B474643A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98DC6980-C360-4667-B976-0096B474643A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98DC6980-C360-4667-B976-0096B474643A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98DC6980-C360-4667-B976-0096B474643A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{627E852F-4564-4A99-B02F-B15F097BF225} = {5208DD1D-06A8-4E31-8856-0098BD23240E}
 		{F6A9A0DC-D91F-4465-8D56-415A93D76C95} = {627E852F-4564-4A99-B02F-B15F097BF225}
+		{1A254D05-C830-4C4C-A937-62447DCCA2CC} = {5208DD1D-06A8-4E31-8856-0098BD23240E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD5F2E49-2CA8-41E7-80EE-190075C5EBF3}

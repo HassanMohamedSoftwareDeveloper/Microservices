@@ -1,0 +1,2 @@
+GET https://localhost:7027/mapinfo/getdistance?originCity=Dallas,Tx&destinationCity=Los Angeles,CA
+Content-Type: application/json
