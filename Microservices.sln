@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{627E852F-4564-4A99-B02F-B15F097BF225}"
 	ProjectSection(SolutionItems) = preProject
+		MicroserviceMessaging.md = MicroserviceMessaging.md
 		README.md = README.md
 		RestVsgRPC.md = RestVsgRPC.md
 		SearchingForMicroservices.md = SearchingForMicroservices.md
@@ -15,16 +16,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{627E852F-4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{F6A9A0DC-D91F-4465-8D56-415A93D76C95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "microservice-map-info", "microservice-map-info\microservice-map-info.csproj", "{976850BD-A066-44E9-8118-556B2E663416}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "microservice-map-info", "microservice-map-info\microservice-map-info.csproj", "{976850BD-A066-44E9-8118-556B2E663416}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapInfo", "GoogleMapInfo\GoogleMapInfo.csproj", "{39FC2390-B995-400D-84A1-073D2FD3DF20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoogleMapInfo", "GoogleMapInfo\GoogleMapInfo.csproj", "{39FC2390-B995-400D-84A1-073D2FD3DF20}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requests", "Requests", "{1A254D05-C830-4C4C-A937-62447DCCA2CC}"
 	ProjectSection(SolutionItems) = preProject
 		microservice-map-info-requests.http = microservice-map-info-requests.http
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice_gRPC_Tester", "Microservice_gRPC_Tester\Microservice_gRPC_Tester.csproj", "{98DC6980-C360-4667-B976-0096B474643A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice_gRPC_Tester", "Microservice_gRPC_Tester\Microservice_gRPC_Tester.csproj", "{98DC6980-C360-4667-B976-0096B474643A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "first-microservice", "first-microservice", "{8C1E4C18-8CBD-455A-8B3D-599A9630BA41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MessageMicroservices", "MessageMicroservices", "{56B6BE9B-403A-4612-B532-7B4B7B5B0266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageContract", "MessageContract\MessageContract.csproj", "{1FC0CC36-1136-480C-93CB-482AB25CD347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceMicroservice", "InvoiceMicroservice\InvoiceMicroservice.csproj", "{13B9A4F8-976B-4034-86BD-7DA78BFDBBDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentMicroservice", "PaymentMicroservice\PaymentMicroservice.csproj", "{4830D685-DE03-4D97-B062-A6244FDFA4F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClient", "TestClient\TestClient.csproj", "{34F1639C-F897-484E-82C7-4EB2E27D76E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +57,22 @@ Global
 		{98DC6980-C360-4667-B976-0096B474643A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98DC6980-C360-4667-B976-0096B474643A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98DC6980-C360-4667-B976-0096B474643A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FC0CC36-1136-480C-93CB-482AB25CD347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC0CC36-1136-480C-93CB-482AB25CD347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC0CC36-1136-480C-93CB-482AB25CD347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC0CC36-1136-480C-93CB-482AB25CD347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13B9A4F8-976B-4034-86BD-7DA78BFDBBDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B9A4F8-976B-4034-86BD-7DA78BFDBBDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B9A4F8-976B-4034-86BD-7DA78BFDBBDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B9A4F8-976B-4034-86BD-7DA78BFDBBDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4830D685-DE03-4D97-B062-A6244FDFA4F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4830D685-DE03-4D97-B062-A6244FDFA4F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4830D685-DE03-4D97-B062-A6244FDFA4F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4830D685-DE03-4D97-B062-A6244FDFA4F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F1639C-F897-484E-82C7-4EB2E27D76E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F1639C-F897-484E-82C7-4EB2E27D76E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F1639C-F897-484E-82C7-4EB2E27D76E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F1639C-F897-484E-82C7-4EB2E27D76E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,7 +80,14 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{627E852F-4564-4A99-B02F-B15F097BF225} = {5208DD1D-06A8-4E31-8856-0098BD23240E}
 		{F6A9A0DC-D91F-4465-8D56-415A93D76C95} = {627E852F-4564-4A99-B02F-B15F097BF225}
+		{976850BD-A066-44E9-8118-556B2E663416} = {8C1E4C18-8CBD-455A-8B3D-599A9630BA41}
+		{39FC2390-B995-400D-84A1-073D2FD3DF20} = {8C1E4C18-8CBD-455A-8B3D-599A9630BA41}
 		{1A254D05-C830-4C4C-A937-62447DCCA2CC} = {5208DD1D-06A8-4E31-8856-0098BD23240E}
+		{98DC6980-C360-4667-B976-0096B474643A} = {8C1E4C18-8CBD-455A-8B3D-599A9630BA41}
+		{1FC0CC36-1136-480C-93CB-482AB25CD347} = {56B6BE9B-403A-4612-B532-7B4B7B5B0266}
+		{13B9A4F8-976B-4034-86BD-7DA78BFDBBDB} = {56B6BE9B-403A-4612-B532-7B4B7B5B0266}
+		{4830D685-DE03-4D97-B062-A6244FDFA4F1} = {56B6BE9B-403A-4612-B532-7B4B7B5B0266}
+		{34F1639C-F897-484E-82C7-4EB2E27D76E5} = {56B6BE9B-403A-4612-B532-7B4B7B5B0266}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD5F2E49-2CA8-41E7-80EE-190075C5EBF3}
